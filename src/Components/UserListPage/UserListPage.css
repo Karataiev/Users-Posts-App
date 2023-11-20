@@ -1,0 +1,9 @@
+.userListPage {
+  width: 700px;
+  height: 100%;
+  background-color: lightgrey;
+  margin: 50px auto;
+  padding-top: 24px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}

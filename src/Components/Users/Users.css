@@ -1,0 +1,21 @@
+.usersContainer {
+  padding: 0 16px 24px;
+}
+
+.userBlock {
+  list-style-type: none;
+  margin-top: 24px;
+  padding: 16px;
+  max-width: 100%;
+  min-height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: lightblue;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.userBlock:hover {
+  background-color: rgb(118, 201, 229);
+}
+
+
