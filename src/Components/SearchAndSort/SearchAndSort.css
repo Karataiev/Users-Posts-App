@@ -1,0 +1,36 @@
+.searchAndSortBlock {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.sortBtnAsc {
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  width: 35px;
+  background-image: url("../../../public/icons/asc.png");
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.sortBtnDesc {
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  width: 35px;
+  background-image: url("../../../public/icons/desc.png");
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.sortBtnAsc:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.sortBtnDesc:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
