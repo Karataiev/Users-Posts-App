@@ -1,21 +1,32 @@
 import "./SearchAndSort.css";
 
-export const SearchAndSort = ({ sorting }) => {
-  const [sort, setSort] = sorting;
+export const SearchAndSort = ({ sortAndSearchState }) => {
+  const [state, setState] = sortAndSearchState;
+
   const handleClick = (e) => {
     e.preventDefault();
-    setSort(!sort);
+    setState({ ...state, isSorted: !state.isSorted });
   };
 
-  const icon = sort ? "sortBtnAsc" : "sortBtnDesc";
+  const handleChange = (e) => {
+    setState({ ...state, search: e.target.value });
+  };
+
+  const icon = state.isSorted ? "sortBtnAsc" : "sortBtnDesc";
 
   return (
     <div className="searchAndSortBlock">
       <div>
-      <input type="text"/>
+        <input
+          type="text"
+          className="searching"
+          placeholder=" Search a user"
+          value={state.search}
+          onChange={(e) => handleChange(e)}
+        />
       </div>
       <div>
-        <button className={icon} onClick={(e) => handleClick(e)}/>
+        <button className={icon} onClick={(e) => handleClick(e)} />
       </div>
     </div>
   );
