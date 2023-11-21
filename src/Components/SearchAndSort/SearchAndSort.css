@@ -32,5 +32,14 @@
 }
 
 .sortBtnDesc:hover {
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  }
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.searching {
+  height: 35px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
