@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Users.css";
 
+
 export const Users = ({ userState }) => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -61,10 +62,12 @@ export const Users = ({ userState }) => {
     return (
       <ul className="usersContainer">
         {searchedUsers.map((user) => (
-          <li key={user.id} className="userBlock">
-            Username: {user.username} <br />
-            Email: {user.email}
-          </li>
+          <a href="/posts">
+            <li key={user.id} className="userBlock">
+              Username: {user.username} <br />
+              Email: {user.email}
+            </li>
+          </a>
         ))}
       </ul>
     );

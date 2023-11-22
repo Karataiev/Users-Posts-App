@@ -18,4 +18,7 @@
   background-color: rgb(118, 201, 229);
 }
 
-
+a {
+  text-decoration: none;
+  color: black;
+}
